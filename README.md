@@ -1,2 +1,184 @@
 # Catch-Pink-Flamingo-Game
-Explore and process the data set intended to simulate big data generated from a large number of users who are playing out imaginary game, Catch the Pink Flamingo, a product of Eglence Inc.  Analyze the data from a business focus and finally generate model and report to suggest Eglence Inc. how to improve revenue from this game. 
+
+Let’s imagine now that you are part of a company called, Eglence Inc. (If you took the Intro Course before this course, you might remember our imaginary company Eglence Inc.)
+
+One of the products of Eglence Inc. is a highly popular mobile game called “Catch The Pink Flamingo”. The objective of the game is to catch as many Pink Flamingos as possible by following the missions provided by real-time prompts in the game and cover the map provided for each level. The levels get more complicated in mission speed and map complexity as the users move from level to level.
+
+It’s a multi-user game where the players have to catch Pink Flamingos that randomly pop up on a gridded world map based on missions that change in real-time. For the player or team to move to the next complexity level, they need to have at least one point in every map grid cell, i.e., cover the whole world map. An example mission would be “Catch the Flamingos on land with stars on their belly” in which the player should only click on flamingos that match the mission criteria, in this case, stars and being on land. If the player tags any other flamingo on the map, he/she or his/her team gets a negative point (-1) on that map location.
+
+After the initial sign up, a player (user) is asked to play the Level 1 individually without joining any team. This is where the user gets trained as a player and starts building a game history. Level 1 is an easy entry to the game composed of only 64 (8x8) grid cells and longer, more obvious, fun missions. Upon completion of Level 1, the player gets asked if she/he wants to join any team or form a team and will continue the rest of the time as a team player even if that means the user is a 1-person team of her/his own.
+
+At the beginning of each level, the game creates a brand new map with more cells than the level before. The complexity of the missions also increases. The missions change more frequently as the levels increase.
+
+The players keep in touch via chat boards assigned to the teams and also via social media, e.g., Twitter.
+
+There are some things to consider while designing an information system for this game:
+
+Ranking of Users: Each user will be ranked individually by the speed and accuracy of their click to completion. The rankings get tracked in real-time and can be viewed both via the mobile app and the website for the game. In addition to score, speed and accuracy based ranking, the other players can see what parts of the map the user has the most points for. The players are also categorized based on their history as “rising star”, “veteran”, “coach”, “social butterfly” and “hot flamingo”. These refer to the qualities of players in addition to the game statistics.
+Ranking of Teams: The teams are ranked publicly. There is a maximum of 30 members in a team and a minimum of 1 member. The players “ask” to join a team and get voted in when 80% of the team members allow. A team may choose to “recruit” if they think a player can contribute or “outvote” a player if a player is not contributing. The players are also allowed to change their teams and bring all their points along. The competition is built on “point-based economy” and it is encouraged by the game providers. When all players leave a team, the team automatically gets removed from public and archived by Eglence Inc.
+In-game Purchases: Users are allowed in game purchases including binoculars to spot the mission specific flamingos, special flamingos that count for more than one grid point, ice blocks to freeze a mission for 20 seconds when needed, and trading cards to transfer the extra points from some grid cells to the ones without any points.
+Game Completion: The game never ends, meaning that there will always be a more complicated next level. A challenge for Eglence Inc. is to keep the game interesting and engaging for players who have been around for a long time. They make use of big data analytics to make sure the veteran players are still around.
+
+# Work Progress
+
+You may need some review in order to complete each week's assignments. In most cases we have tried to duplicate review material from previous courses in this Specialization here. However, there may be some things which we did not account for, so please post comments to the Discussion if you need further assistance beyond the review documents we are providing. A listing of the correct versions for the software we will be using in the Cloudera VM is available at the end of this Reading.
+
+Week 1
+
+Introduction, Background, and Data Exploration
+
+This week you will become familiar with the overarching goals of this Capstone. You will be introduced to a fictitious game called "Catch the Pink Flamingo" and the associated data generated by our development team of data scientists. This is a fascinating data set which provides many different options for exploration. The data set actually consists of 8 separate CSV files containing various types of data designed to simulate many aspects of game play and in-game user activity. You will apply what you have learned in this Specialization on this data set to gain a better understanding of the practical challenges that a big data scientist faces every day.
+
+In Week 1 you will also be doing some data exploration, aggregation, and filtering. We provide some Hands-On readings designed to walk you through some data exploration tasks using Splunk.
+
+Review:
+
+Splunk (Week 4 in "Introduction to Big Data Analytics").
+
+Reading: Introduction to Splunk.
+
+Week 2
+
+This week you will learn how to use KNIME to create decision trees and perform clustering.
+
+Review:
+
+Classification, Decision Trees, and Association Rules with KNIME (Week 4 of "Machine Learning with Big Data")
+
+Week 3
+
+This week you will learn how to use Spark MLlib to do your first big data analytics on the simulated game data. You will need to install Anaconda on your Cloudera VM. We provide instructions and guidance on this process.
+
+Review:
+
+Spark Analytics with PySpark (Week 5 of "Introduction to Big Data Analytics)
+
+Spark MLlib with PySpark (Week 2, Lesson 3 from "Machine Learning with Big Data")
+
+Week 4
+
+This week we be exploring a somewhat different dataset, simulated chat data, and perform some graph analytics using Neo4j.
+
+Review:
+
+Click the link below for the Hands-On with Neo4j Readings from Graph Analytics for Big Data.
+
+neo4j_supplementary_resource_pdfs.zip
+Week 5
+
+This week we will be gathering our results together and preparing a presentation and report. No review necessary.
+
+Week 6
+
+This week you will submit your presentation and final report and give yourself a huge pat on the back. Congratulations, you have successfully completed the Big Data Specialization!
+
+# Instructions for Downloading Software
+
+Below are the download links for the software used each week. We recommend installing and using Spark on the Cloudera VM, but the other tools do not need to run on the VM.
+
+Week 1: Splunk
+
+https://www.splunk.com/en_us/download/splunk-enterprise.html?ac=coursera_download
+
+Week 2: KNIME
+
+You can skip the survey info in order to download the file directly. For compatibility with examples shown in the course material, version 2.11.3 should be downloaded.
+
+https://www.knime.org/downloads/overview
+
+Week 3: Spark
+
+You can run Spark in the Cloudera VM. Instructions for downloading and installing the Cloudera VM are in the Reading called Downloading and Installing the Cloudera VM Instructions.
+
+https://github.com/words-sdsc/courseraDataSimulation/blob/master/readings/Week%203%20pySpark%20MLlib%20Clustering.ipynb
+
+Week 4: Neo4J
+
+https://neo4j.com/download/
+
+Software Versions You Will Need on the Cloudera VM:
+
+python: 2.7.11.final .0
+
+python-bits: 64
+
+OS: Linux
+
+OS-rel ease: 2.6.32-358.el 6.x86 64
+
+machine: xB6 64
+
+processor: x86_64
+
+byte order: little
+
+LC_ALL: None
+
+LANG: en_US.UTF-8
+
+pandas: 0.18.0
+
+nose: 1.3.7
+
+pip: 8. 1.1
+
+setuptools: 20.3
+
+Cython: 0.23.4
+
+numpy: 1 .10.4
+
+scipy: 0.17.0
+
+statsmodels: 0.6.l
+
+xarray: None
+
+IPython: 4.1.2
+
+sphinx: 1.3.5
+
+patsy: 0.4.0
+
+dateutil: 2.5.1
+
+pytz: 2016.2
+
+blosc: None
+
+bottleneck: 1.0.0
+
+t ables: 3.2.2
+
+numexpr: 2.5
+
+matplotlib: 1.5.l
+
+openpyxl : 2.3.2
+
+xlrd: 0.9.4
+
+xlwt : 1.0.0
+
+xlsxwriter: 0.8. 4
+
+lxml : 3.6.0
+
+bs4: 4.4.1
+
+html5lib: None
+
+httplib2: None
+
+apiclient : None
+
+sqlalchemy: 1.0.12
+
+pymysql : None
+
+psycopg2: None
+
+jinja2: 2.8
+
+boto: 2.39.0
+
